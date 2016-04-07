@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/Board.qml</file>
+        <file>figurines/black_bishop.svg</file>
+        <file>figurines/black_king.svg</file>
+        <file>figurines/black_knight.svg</file>
+        <file>figurines/black_pawn.svg</file>
+        <file>figurines/black_queen.svg</file>
+        <file>figurines/black_rook.svg</file>
+        <file>figurines/white_bishop.svg</file>
+        <file>figurines/white_king.svg</file>
+        <file>figurines/white_knight.svg</file>
+        <file>figurines/white_pawn.svg</file>
+        <file>figurines/white_queen.svg</file>
+        <file>figurines/white_rook.svg</file>
+    </qresource>
+</RCC>
