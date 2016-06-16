@@ -16,6 +16,10 @@ if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_CXX_COMPILER_ID}" STRE
     endif()
 endif()
 
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+    add_definitions(-fcolor-diagnostics)
+endif()
+
 find_package(Qt5 REQUIRED COMPONENTS Quick)
 
 add_subdirectory(src)
