@@ -25,7 +25,7 @@ Item {
                        : (index % 2 == 0 ? "#333" : "#ccc")
 
                 Image {
-                    source: { g_board.getFigure(index); }
+                    source: { g_board.getFigureAssetUrl(g_board.getFigure(index)); }
                     anchors.centerIn: parent
                 }
             }

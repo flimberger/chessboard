@@ -32,9 +32,12 @@ class Board : public QObject
 public:
     explicit Board(QObject *parent=nullptr);
 
-    Q_INVOKABLE QString getFigure(int index) const;
+    Q_INVOKABLE int getFigure(int index) const;
+    Q_INVOKABLE QString getFigureAssetUrl(int figure) const;
+    Q_INVOKABLE std::vector<int> getPossibleTargets(int figure, int position);
 
 private:
+    std::vector<int> getPawnTargets(int position, Colors color) const;
     std::array<Figure, kNumberOfFields> m_fields;
 };
 
